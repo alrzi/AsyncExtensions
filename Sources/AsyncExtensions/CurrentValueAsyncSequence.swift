@@ -4,7 +4,7 @@
 import Foundation
 
 @dynamicMemberLookup
-public actor CurrentValueAsyncSequence<Value>: AsyncSequence where Value: Sendable {
+public final actor CurrentValueAsyncSequence<Value>: AsyncSequence where Value: Sendable {
     public typealias Element = Value
 
     public init(_ value: Value) {
